@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
@@ -98,7 +99,11 @@ namespace AuthServices.Controllers
         //{
         //    return Ok();
         //}
-
+        [HttpGet]
+        public async Task<IActionResult> GetUser()
+        {
+            return Ok(JsonConvert.SerializeObject(_context.Users.ToList()));
+        }
 
     }
-}
+}   

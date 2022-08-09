@@ -33,6 +33,8 @@ namespace AuthServices
             });
             services.AddDbContext<AuthDBContext>(options => options.
            UseNpgsql(Configuration.GetConnectionString("Auth"),b=>b.MigrationsAssembly("AuthServices")));
+
+
             services.AddScoped<DbContext>(provider => provider.GetService<AuthDBContext>());
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options => {
