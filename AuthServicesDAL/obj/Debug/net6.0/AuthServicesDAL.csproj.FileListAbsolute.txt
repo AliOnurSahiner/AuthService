@@ -1,0 +1,14 @@
+C:\Users\onur5\source\repos\AuthServices\AuthServices\AuthServicesDAL\obj\Debug\net6.0\AuthServicesDAL.csproj.AssemblyReference.cache
+C:\Users\onur5\source\repos\AuthServices\AuthServices\AuthServicesDAL\obj\Debug\net6.0\AuthServicesDAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\onur5\source\repos\AuthServices\AuthServices\AuthServicesDAL\obj\Debug\net6.0\AuthServicesDAL.AssemblyInfoInputs.cache
+C:\Users\onur5\source\repos\AuthServices\AuthServices\AuthServicesDAL\obj\Debug\net6.0\AuthServicesDAL.AssemblyInfo.cs
+C:\Users\onur5\source\repos\AuthServices\AuthServices\AuthServicesDAL\obj\Debug\net6.0\AuthServicesDAL.csproj.CoreCompileInputs.cache
+C:\Users\onur5\source\repos\AuthServices\AuthServices\AuthServicesDAL\bin\Debug\net6.0\AuthServicesDAL.deps.json
+C:\Users\onur5\source\repos\AuthServices\AuthServices\AuthServicesDAL\bin\Debug\net6.0\AuthServicesDAL.runtimeconfig.json
+C:\Users\onur5\source\repos\AuthServices\AuthServices\AuthServicesDAL\bin\Debug\net6.0\AuthServicesDAL.dll
+C:\Users\onur5\source\repos\AuthServices\AuthServices\AuthServicesDAL\bin\Debug\net6.0\AuthServicesDAL.pdb
+C:\Users\onur5\source\repos\AuthServices\AuthServices\AuthServicesDAL\obj\Debug\net6.0\AuthServicesDAL.dll
+C:\Users\onur5\source\repos\AuthServices\AuthServices\AuthServicesDAL\obj\Debug\net6.0\refint\AuthServicesDAL.dll
+C:\Users\onur5\source\repos\AuthServices\AuthServices\AuthServicesDAL\obj\Debug\net6.0\AuthServicesDAL.pdb
+C:\Users\onur5\source\repos\AuthServices\AuthServices\AuthServicesDAL\obj\Debug\net6.0\AuthServicesDAL.genruntimeconfig.cache
+C:\Users\onur5\source\repos\AuthServices\AuthServices\AuthServicesDAL\obj\Debug\net6.0\ref\AuthServicesDAL.dll

@@ -1,5 +1,6 @@
-using AuthServices.Context;
+using AuthServiceBussiness.Concrete;
 using AuthServices.UserMiddleware;
+using AuthServicesDAL.Context.AuthDBContext;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -52,6 +53,8 @@ namespace AuthServices
             services.AddMvc();
             services.AddControllers();
             services.AddRazorPages();
+
+            services.AddScoped<AuthManager>();
 
 
         }

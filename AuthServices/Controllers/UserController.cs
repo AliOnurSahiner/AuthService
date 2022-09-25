@@ -1,18 +1,14 @@
-﻿using AuthServices.Context;
-using AuthServices.Entities;
+﻿using AuthServiceBussiness.Concrete;
 using AuthServices.Models.Request;
+using AuthServicesDAL.Entities.User;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
-using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
 using System.Security.Claims;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace AuthServices.Controllers
 {
@@ -20,20 +16,20 @@ namespace AuthServices.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        private readonly AuthDBContext _context = new AuthDBContext();
+        private readonly AuthManager _authManager;
         private readonly ILogger<UserController> _logger;
 
         public IConfiguration _config;
 
-        public UserController(IConfiguration config, ILogger<UserController> logger, AuthDBContext context)
+        public UserController(IConfiguration config, ILogger<UserController> logger, AuthManager authManager)
         {
             _logger = logger;
             _config = config;
-            _context = context;
+            _authManager = authManager;
         }
         [HttpPost]
         [Route("Login")]
-        public async Task<IActionResult> Login([FromBody] LoginRequest request)
+        public  IActionResult Login([FromBody] LoginRequest request)
         {
             _logger.LogInformation("Privacy Page");
             try
@@ -45,11 +41,11 @@ namespace AuthServices.Controllers
 
                 _logger.LogError(ex,"This Exception Privacy Page");
             }
-            var user = Authenticate(request);
+            var loginUser = _authManager.Login(request);
 
-            if (user != null)
+            if (loginUser != null)
             {
-                var token = Generate(user);
+                var token = Generate(loginUser);
                 return Ok(token);
             }
 
@@ -80,18 +76,18 @@ namespace AuthServices.Controllers
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
 
-        private User Authenticate(LoginRequest userLogin)
-        {
-            var currentUser = _context.Users.FirstOrDefault(x => x.Email.ToLower() == userLogin.Email.ToLower() && x.Password == userLogin.Password);
-            //var currentUser = UserConstants.Users.FirstOrDefault(x => x.Email.ToLower() == userLogin.Email.ToLower() && x.Password == userLogin.Password);
-            if (currentUser != null)
-            {
-                return currentUser;
-            }
-            return null;
+        //private User Authenticate(LoginRequest userLogin)
+        //{
+        //    var currentUser = _authManager.Users.FirstOrDefault(x => x.Email.ToLower() == userLogin.Email.ToLower() && x.Password == userLogin.Password);
+        //    //var currentUser = UserConstants.Users.FirstOrDefault(x => x.Email.ToLower() == userLogin.Email.ToLower() && x.Password == userLogin.Password);
+        //    if (currentUser != null)
+        //    {
+        //        return currentUser;
+        //    }
+        //    return null;
 
 
-        }
+        //}
 
         //[HttpPost]
         //[Route("Register")]
@@ -99,11 +95,6 @@ namespace AuthServices.Controllers
         //{
         //    return Ok();
         //}
-        [HttpGet]
-        public async Task<IActionResult> GetUser()
-        {
-            return Ok(JsonConvert.SerializeObject(_context.Users.ToList()));
-        }
-
+       
     }
 }   

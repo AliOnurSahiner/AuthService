@@ -1,0 +1,15 @@
+C:\Users\onur5\source\repos\AuthServices\AuthServices\AuthServiceBussiness\obj\Debug\net6.0\AuthServiceBussiness.csproj.AssemblyReference.cache
+C:\Users\onur5\source\repos\AuthServices\AuthServices\AuthServiceBussiness\obj\Debug\net6.0\AuthServiceBussiness.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\onur5\source\repos\AuthServices\AuthServices\AuthServiceBussiness\obj\Debug\net6.0\AuthServiceBussiness.AssemblyInfoInputs.cache
+C:\Users\onur5\source\repos\AuthServices\AuthServices\AuthServiceBussiness\obj\Debug\net6.0\AuthServiceBussiness.AssemblyInfo.cs
+C:\Users\onur5\source\repos\AuthServices\AuthServices\AuthServiceBussiness\obj\Debug\net6.0\AuthServiceBussiness.csproj.CoreCompileInputs.cache
+C:\Users\onur5\source\repos\AuthServices\AuthServices\AuthServiceBussiness\bin\Debug\net6.0\AuthServiceBussiness.deps.json
+C:\Users\onur5\source\repos\AuthServices\AuthServices\AuthServiceBussiness\bin\Debug\net6.0\AuthServiceBussiness.dll
+C:\Users\onur5\source\repos\AuthServices\AuthServices\AuthServiceBussiness\bin\Debug\net6.0\AuthServiceBussiness.pdb
+C:\Users\onur5\source\repos\AuthServices\AuthServices\AuthServiceBussiness\bin\Debug\net6.0\AuthServicesDAL.dll
+C:\Users\onur5\source\repos\AuthServices\AuthServices\AuthServiceBussiness\bin\Debug\net6.0\AuthServicesDAL.pdb
+C:\Users\onur5\source\repos\AuthServices\AuthServices\AuthServiceBussiness\obj\Debug\net6.0\AuthServiceBussiness.csproj.CopyComplete
+C:\Users\onur5\source\repos\AuthServices\AuthServices\AuthServiceBussiness\obj\Debug\net6.0\AuthServiceBussiness.dll
+C:\Users\onur5\source\repos\AuthServices\AuthServices\AuthServiceBussiness\obj\Debug\net6.0\refint\AuthServiceBussiness.dll
+C:\Users\onur5\source\repos\AuthServices\AuthServices\AuthServiceBussiness\obj\Debug\net6.0\AuthServiceBussiness.pdb
+C:\Users\onur5\source\repos\AuthServices\AuthServices\AuthServiceBussiness\obj\Debug\net6.0\ref\AuthServiceBussiness.dll
